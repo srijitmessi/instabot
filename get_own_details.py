@@ -2,7 +2,7 @@ from const import BASE_URL, APP_ACCESS_TOKEN
 import requests
 
 req_url = BASE_URL + "users/self/?access_token=" + APP_ACCESS_TOKEN
-print req_url
+print "requesting..."
 data = requests.get(req_url)
 data = data.json()
 if data['meta']['code'] == 200:
