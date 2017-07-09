@@ -4,7 +4,7 @@ from get_recent_media import get_recent_media
 import requests
 
 
-def like_post(username):
+def post_comment(username):
     id = get_user_id(username)
     if id != 0:
         pass
@@ -13,14 +13,16 @@ def like_post(username):
 
     print "Which Post you want to like?"
     post_id = get_recent_media(id)
-    request_url = (BASE_URL + 'media/%s/likes') % (post_id)
+    text = raw_input("Type in your comment. \n")
+    request_url = (BASE_URL + 'media/%s/comments') % (post_id)
     payload = {
-        "access_token": APP_ACCESS_TOKEN
+        "access_token": APP_ACCESS_TOKEN,
+        "text" : text
     }
     print 'POST request url : %s' % request_url
-    like = requests.post(request_url, payload).json()
+    comment = requests.post(request_url, payload).json()
 
-    if like['meta']['code'] == 200:
-        print 'Post liked. <3'
+    if comment['meta']['code'] == 200:
+        print 'You commented on post'
     else:
-        print 'Cannot like post due to some error.'
+        print 'Something went wrong.'
