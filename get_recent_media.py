@@ -15,10 +15,10 @@ def get_recent_media(user_id):
 
     data = requests.get(req_url).json()
 
-    query = raw_input("Get post by searching for keyword in caption: ")
+    query = raw_input("Get post by searching for keyword in caption(leave empty for latest): ")
 
     if not query:
-        print data['data'][0]['id']
+        print "caption of post: " + data['data'][0]['caption']['text']
         img_url = data['data'][0]['images']['standard_resolution']['url']
         urllib.urlretrieve(img_url, 'hey.jpg')
         return data['data'][0]['id']
@@ -32,7 +32,7 @@ def get_recent_media(user_id):
         else:
             count += 1
 
-        print data['data'][count]['id']
+        print "caption of post: " + data['data'][count]['caption']['text']
         img_url = data['data'][count]['images']['standard_resolution']['url']
         urllib.urlretrieve(img_url, 'hey.jpg')
         return data['data'][count]['id']
