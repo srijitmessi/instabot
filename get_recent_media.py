@@ -1,3 +1,7 @@
+#
+#   This function will fetch recent media posted by the user and download its content.
+#
+
 import requests
 import urllib
 from get_user_id import get_user_username, get_user_id

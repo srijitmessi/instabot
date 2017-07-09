@@ -10,11 +10,11 @@ import requests
 
 
 print "\n\t\tInstaBot \n\t\tversion 1.0.0\n"
-# try:
-#     x = requests.get("https://google.com")
-# except:
-#     print "No Network Connection.\n Try Running Windows Network Diagnostics. "
-#     exit()
+try:
+    x = requests.get("https://google.com")
+except:
+    print "No Network Connection.\n Try Running Windows Network Diagnostics. "
+    exit()
 
 while True:
     print "1. Get active account's instagram info.\n2. Get any other's information. \n3. Get recent post. \n4. Like recent post. \n5. Leave comment on recent post. \n6. View comments.\n7. Exit."

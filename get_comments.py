@@ -1,3 +1,8 @@
+#
+#   This function will fetch comments on a post.
+#   And will display on the screen.
+#
+
 from const import BASE_URL, APP_ACCESS_TOKEN
 from get_user_id import get_user_id, get_user_username
 from get_recent_media import get_recent_media

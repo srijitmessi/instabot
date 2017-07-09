@@ -1,3 +1,7 @@
+#
+#   Two functions in this file will fetch user's id and username after searching.
+#
+
 from const import BASE_URL, APP_ACCESS_TOKEN
 from validate import validate_char
 import requests

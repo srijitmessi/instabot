@@ -1,3 +1,8 @@
+#
+#   This function will like the selected post.
+#   The likes/comments will be done on behalf of @yogesh_biebz
+#
+
 from const import BASE_URL, APP_ACCESS_TOKEN
 from get_user_id import get_user_id, get_user_username
 from get_recent_media import get_recent_media

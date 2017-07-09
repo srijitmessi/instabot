@@ -1,3 +1,8 @@
+#
+#   This function will fetch details from other user's account.
+#   However I have only displayed that information that I found re
+#
+
 from const import BASE_URL, APP_ACCESS_TOKEN
 import requests
 from get_user_id import get_user_username
