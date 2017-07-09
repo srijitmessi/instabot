@@ -1,5 +1,6 @@
 #
 #   This function returns the details of the Developer of this Application.
+#   Or in other words the current account in behalf of which you are liking, commenting on posts.
 #   @yogesh_biebz
 #
 

@@ -17,7 +17,7 @@ print "\n\t\tInstaBot \n\t\tversion 1.0.0\n"
 #     exit()
 
 while True:
-    print "1. Get developer's instagram info.\n2. Get any other's information. \n3. Get recent post. \n4. Like recent post. \n5. Leave comment on recent post. \n6. View comments.\n7. Exit."
+    print "1. Get active account's instagram info.\n2. Get any other's information. \n3. Get recent post. \n4. Like recent post. \n5. Leave comment on recent post. \n6. View comments.\n7. Exit."
     choice = raw_input("What do you want to do? ")
     choice = validate.validate_int(choice)
 
