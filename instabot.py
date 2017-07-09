@@ -4,6 +4,7 @@ from get_user_detail import get_user_detail
 from get_recent_media import get_recent_media
 from like_post import like_post
 from post_comment import post_comment
+from get_comments import get_comments
 import validate
 import requests
 
@@ -36,5 +37,8 @@ while True:
     elif choice == 5:
         user = get_user_username()
         post_comment(user)
+    elif choice == 6:
+        user = get_user_username()
+        get_comments(user)
     else:
         exit()
