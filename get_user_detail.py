@@ -1,6 +1,17 @@
 #
 #   This function will fetch details from other user's account.
-#   However I have only displayed that information that I found re
+#   However I have only displayed that information that I thought should display
+#   you can print any other information by using these code after line 34.
+#
+#   to print no of followers:       print "data['data']['counts']['followed_by']"
+#
+#    to print no of following:       print "data['data']['counts']['following']"
+#
+#   to print no of userid:          print "data['data']['id']"
+#
+#    to print no of website:         print "data['data']['website']"
+#
+#    to print no of posts:           print "data['data']['counts']['media']"
 #
 
 from const import BASE_URL, APP_ACCESS_TOKEN
