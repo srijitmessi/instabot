@@ -23,7 +23,7 @@ def get_comments(username):
 
     comments = requests.get(req_url).json()
 
-    if not comments['data'][0]:
+    if not comments['data']:
         print "No comments found."
     else:
         query = raw_input("Search for comments having certain keyword? (Leave empty if all comments):  \n")
