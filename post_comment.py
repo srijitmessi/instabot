@@ -16,7 +16,7 @@ def post_comment(username):
     else:
         exit()
 
-    print "Which Post you want to like?"
+    print "Which Post you want to comment on?"
     post_id = get_recent_media(id)
     text = raw_input("Type in your comment. \n")
     request_url = (BASE_URL + 'media/%s/comments') % (post_id)
